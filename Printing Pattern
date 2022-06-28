@@ -1,0 +1,19 @@
+# Printing Pattern
+# P.s. there is something wrong with my range
+
+for s in range(4):
+    for j in range(s + 1):
+        print('# ',end="")
+    print()
+
+for t in range(1,5):
+    for y in range(t,5):
+        print(y,end="")
+    print()
+
+Lst = ["A","B","C","D","P","Q","R" ]
+for u in range(4):
+    for g in Lst[0],[6]:
+        print(g,end="")
+
+    print()
