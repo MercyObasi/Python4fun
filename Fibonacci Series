@@ -1,0 +1,25 @@
+# First 50  Fibonacci Numbers
+def fib(k):
+
+    fst = 0
+    sst = 1
+    print(fst)
+    print(sst)
+    if k == 1:
+        print(fst)
+    elif k <= 0:
+        print("Invalid Input")
+    try:
+        int(k)
+    except:
+        print("Invalid Input")
+    else:
+        for bt in range(2, k):
+
+            vrt = fst + sst
+            fst = sst
+            sst = vrt
+            if vrt <= 100:
+                print(vrt)
+
+fib(k)
