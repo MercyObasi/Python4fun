@@ -1,0 +1,40 @@
+#User Insert Array
+from array import*
+j = int(input("Please insert the length of your array: "))
+arr = array('i',[])
+for i in range(j):
+  n = int(input("Please enter your next value:"))
+  arr.append(n)
+print(arr)
+print(arr.typecode)
+# Find the index value of the value entered by the user
+val = int(input("Enter the Value for search:"))
+h = 0
+for e in arr:
+  if e == val:
+    print(h)
+    break
+  h += 1
+#inbuilt function
+print(arr.index(val))
+# Remove the index number [2]
+yum = array('i',[34,56,786,45,10])
+
+r = 0
+for u in yum:
+  if r == 2:
+    yum.pop(r)
+  r += 1
+print(yum)
+
+#yum.pop(2)
+#print(yum)
+
+# Reverse an array without using reverse
+jules = array('i',[16,59,44,23,1])
+hun = array('i',[])
+k = -1
+for y in jules:
+  hun.insert(k, y)
+  k -= 1
+print(hun)
