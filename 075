@@ -1,0 +1,32 @@
+#Global and Local Variable 
+"""
+Global variable is outside the fxn and the scope is everywhere while local variable is inside the fxn and the scope 
+inside the fxn.
+
+A global variable can be accessed inside a fxn
+
+To change a global variable inside a fxn, use "global a"
+"""
+a = 10
+def sth():
+  global a
+  a = 15
+  print(a)
+
+sth()
+print("outside:",a)
+
+"""
+if you want to create a local variable and still change the global one inside the fxn we use "globals()" and 
+since it refers to all the globals variables outside the fxn we use "globals()['a']" to be specific
+"""
+
+b = 12
+def sths():
+  b = 3
+  globals()['b'] = 18
+  print("inside:", b)
+
+sths()
+
+print("out:", b)
