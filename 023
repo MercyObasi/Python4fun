@@ -1,0 +1,40 @@
+from numpy import*
+dion = array([23,2,7,4], float)
+print(dion.dtype)
+print(dion)
+moles = arange(2,20,2)
+print(moles)
+wealth = linspace(1,10,12)
+print(wealth)
+quin = logspace(1,13,5)
+print(quin)
+print("%.2F" %quin[0])
+shantel = zeros(5)
+print(shantel)
+# Add 5 to each value of an array using a loop 
+yvonne = array([23,3,4,5,7])
+luke = []
+for i in yvonne:
+  t = i + 5
+  luke.append(t)
+print(luke)
+# or 
+yvonne = yvonne + 5
+print(yvonne)
+# Adding 2 arrays using for loop 
+my = array([12,16,5,9,10])
+arr = array([1,2,3,4,5])
+fel = []
+w = 0
+for g in my:
+  h = g + arr[w]
+  fel.append(h)
+  w += 1
+print(fel)
+# Shallow and Deep Copying
+arr2 = arr.view()
+print(arr2)
+print(id(arr2))
+arr3 = my.copy()
+print(arr3)
+# Find the maximum value of an array without using inbuilt function
