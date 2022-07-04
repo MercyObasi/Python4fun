@@ -4,8 +4,8 @@ def fact(n):
 
   york = 1
   for tems in range(1, n+1):
-    c = york * tems
-    york = c
+    york = york * tems
+   
     
   return york
   
