@@ -11,3 +11,12 @@ def fact(n):
   
 print(fact(5))
 
+# Factorial using recursion
+def facts(n):
+
+  if n == 0:
+    return 1  
+
+  return n * facts(n - 1)
+
+facts(5)
