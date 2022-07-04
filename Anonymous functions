@@ -1,0 +1,21 @@
+# Lambda or Anonymous function
+from functools import reduce
+any = lambda c,g : c ** g
+
+print(any(4,3))
+
+built = [2,4,5,3,6,7,8,9,23]
+
+evens = (list(filter(lambda a: a % 2 == 0, built)))
+
+print(evens)
+
+doubles = list(map(lambda a: a * 2, evens))
+
+print(doubles)
+
+sums = reduce(lambda a, b: a + b,  doubles)
+
+print(sums)
+
+
