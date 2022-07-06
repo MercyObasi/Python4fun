@@ -1,7 +1,7 @@
-import factorial
-factorial.fact(8)
-factorial.facts(8)
+import Factorial
+Factorial.fact(8)
+Factorial.facts(8)
 #or
-from factorial import*
+from Factorial import*
 fact(10)
 facts(10)
